@@ -6,8 +6,8 @@ Sentiment analysis is a natural language processing technique that involves anal
 
 ## Requirements
 
-* beautifulsoup4
-* transformers
+* `beautifulsoup4`
+* `transformers`
 
 ## Installation
 
@@ -29,7 +29,7 @@ model_name = "nlptown/bert-base-multilingual-uncased-sentiment"
 
 ### Web scrapping
 
-For reviews we used a web scrap function to scrap the data using beautifulsoup4 from yelp web site.
+For reviews we used a web scrap function to scrap the data using `beautifulsoup4` from yelp web site.
 
 ```py
 def getReviews(link):
@@ -41,7 +41,7 @@ def getReviews(link):
 
 ### Sentiment score
 
-We have **sentiment_score()** function to return the tensor using the argmax function to get the max element of the array.
+We have `sentiment_score()` function to return the tensor using the argmax function to get the max element of the array.
 
 ```py
 def sentiment_score(review):
